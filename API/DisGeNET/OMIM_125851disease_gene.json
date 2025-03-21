@@ -1,0 +1,236 @@
+{
+    "status": "OK",
+    "paging": {
+        "pageSize": 100,
+        "totalElements": 2,
+        "totalElementsInPage": 2,
+        "currentPageNumber": 0
+    },
+    "warnings": [
+        "Academic roles can only access to CURATED sources: (PSYGENET, ORPHANET, CLINGEN, CLINVAR,UNIPROT, RGD_HUMAN",
+        "gene_ncbi_id > The parameter value is empty / unspecified.",
+        "gene_ensembl_id > The parameter value is empty / unspecified.",
+        "gene_symbol > The parameter value is empty / unspecified.",
+        "uniprot_id > The parameter value is empty / unspecified.",
+        "chemical > The parameter value is empty / unspecified.",
+        "chemical_association > The parameter value is empty / unspecified.",
+        "page_number > The parameter value is unspecified or not an integer number.",
+        "source > The parameter value is empty / unspecified.",
+        "dis_type > The parameter value is empty / unspecified.",
+        "dis_class_list > The parameter value is empty / unspecified.",
+        "order_by > The parameter value is empty / unspecified.",
+        "min_score > The parameter value is unspecified or not a double number.",
+        "max_score > The parameter value is unspecified or not a double number.",
+        "min_ei > The parameter value is unspecified or not a double number.",
+        "max_ei > The parameter value is unspecified or not a double number.",
+        "min_dsi > The parameter value is unspecified or not a double number.",
+        "max_dsi > The parameter value is unspecified or not a double number.",
+        "min_dpi > The parameter value is unspecified or not a double number.",
+        "max_dpi > The parameter value is unspecified or not a double number.",
+        "min_pli > The parameter value is unspecified or not a double number.",
+        "max_pli > The parameter value is unspecified or not a double number.",
+        "min_numCTsupportingAssociation > The parameter value is unspecified or not an integer number."
+    ],
+    "requestpar": {
+        "disease": "OMIM_125851"
+    },
+    "userinfo": {
+        "profile": "ACADEMIC",
+        "profileDescription": "Your DISGENET profile is ACADEMIC; you can access DISGENET REST endpoints with restrictions."
+    },
+    "payload": [
+        {
+            "assocID": 35018209,
+            "symbolOfGene": "GCK",
+            "geneNcbiID": 2645,
+            "geneEnsemblIDs": [
+                "ENSG00000106633"
+            ],
+            "geneNcbiType": "protein-coding",
+            "geneDSI": 0.491,
+            "geneDPI": 0.87,
+            "genepLI": 7.6033e-07,
+            "geneProteinStrIDs": [
+                "P35557",
+                "Q53Y25"
+            ],
+            "geneProteinClassIDs": [
+                "DTO_03300101"
+            ],
+            "geneProteinClassNames": [
+                "Kinase"
+            ],
+            "diseaseVocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "diseaseName": "MODY2",
+            "diseaseType": "disease",
+            "diseaseUMLSCUI": "C0342277",
+            "diseaseClasses_MSH": [
+                "Endocrine System Diseases (C19)",
+                "Nutritional and Metabolic Diseases (C18)"
+            ],
+            "diseaseClasses_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "diseaseClasses_DO": [
+                "disease of metabolism (0014667)",
+                "genetic disease (630)"
+            ],
+            "diseaseClasses_HPO": [],
+            "numCTsupportingAssociation": 0,
+            "numPMIDs": 177,
+            "chemicalsIncludedInEvidence": null,
+            "numberPmidsWithChemsIncludedInEvidenceBySource": [
+                {
+                    "source": "ALL",
+                    "numPmids": 1
+                },
+                {
+                    "source": "CURATED",
+                    "numPmids": 1
+                },
+                {
+                    "source": "INFERRED",
+                    "numPmids": 0
+                },
+                {
+                    "source": "MODELS",
+                    "numPmids": 0
+                },
+                {
+                    "source": "PSYGENET",
+                    "numPmids": 0
+                },
+                {
+                    "source": "ORPHANET",
+                    "numPmids": 0
+                },
+                {
+                    "source": "CLINGEN",
+                    "numPmids": 0
+                },
+                {
+                    "source": "UNIPROT",
+                    "numPmids": 0
+                },
+                {
+                    "source": "HPO",
+                    "numPmids": 0
+                },
+                {
+                    "source": "GWASCAT",
+                    "numPmids": 0
+                },
+                {
+                    "source": "CLINVAR",
+                    "numPmids": 0
+                },
+                {
+                    "source": "TEXTMINING_HUMAN",
+                    "numPmids": 0
+                },
+                {
+                    "source": "PHEWASCAT",
+                    "numPmids": 0
+                },
+                {
+                    "source": "TEXTMINING_MODELS",
+                    "numPmids": 0
+                },
+                {
+                    "source": "MGD_HUMAN",
+                    "numPmids": 0
+                },
+                {
+                    "source": "MGD_MOUSE",
+                    "numPmids": 0
+                },
+                {
+                    "source": "RGD_HUMAN",
+                    "numPmids": 1
+                },
+                {
+                    "source": "RGD_RAT",
+                    "numPmids": 0
+                },
+                {
+                    "source": "CLINICALTRIALS",
+                    "numPmids": 0
+                }
+            ],
+            "score": 1.0,
+            "yearInitial": 1975,
+            "yearFinal": 2023,
+            "el": null,
+            "ei": 0.9857142857142858
+        },
+        {
+            "assocID": 35018217,
+            "symbolOfGene": "HNF4A",
+            "geneNcbiID": 3172,
+            "geneEnsemblIDs": [
+                "ENSG00000101076"
+            ],
+            "geneNcbiType": "protein-coding",
+            "geneDSI": 0.437,
+            "geneDPI": 0.913,
+            "genepLI": 0.99919,
+            "geneProteinStrIDs": [
+                "P41235",
+                "B9VVT8",
+                "F1D8S2",
+                "F1D8T0",
+                "F1D8T1"
+            ],
+            "geneProteinClassIDs": [
+                "DTO_00102000"
+            ],
+            "geneProteinClassNames": [
+                "Nuclear receptor"
+            ],
+            "diseaseVocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "diseaseName": "MODY2",
+            "diseaseType": "disease",
+            "diseaseUMLSCUI": "C0342277",
+            "diseaseClasses_MSH": [
+                "Endocrine System Diseases (C19)",
+                "Nutritional and Metabolic Diseases (C18)"
+            ],
+            "diseaseClasses_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "diseaseClasses_DO": [
+                "disease of metabolism (0014667)",
+                "genetic disease (630)"
+            ],
+            "diseaseClasses_HPO": [],
+            "numCTsupportingAssociation": 0,
+            "numPMIDs": 1,
+            "chemicalsIncludedInEvidence": null,
+            "numberPmidsWithChemsIncludedInEvidenceBySource": [],
+            "score": 0.6000000000000001,
+            "yearInitial": 1993,
+            "yearFinal": 1993,
+            "el": null,
+            "ei": 0.8571428571428571
+        }
+    ],
+    "httpStatus": 200
+}

@@ -1,0 +1,619 @@
+{
+    "status": "OK",
+    "paging": {
+        "pageSize": 100,
+        "totalElements": 9,
+        "totalElementsInPage": 9,
+        "currentPageNumber": 0
+    },
+    "warnings": [
+        "Academic roles can only access to CURATED sources: (PSYGENET, ORPHANET, CLINGEN, CLINVAR,UNIPROT, RGD_HUMAN",
+        "page_number > The parameter value is unspecified or not an integer number.",
+        "source > The parameter value is empty / unspecified.",
+        "min_num_shared_genes > The parameter value is unspecified or not an integer number.",
+        "min_num_shared_variants > The parameter value is unspecified or not an integer number.",
+        "min_jaccard_genes > The parameter value is unspecified or not a double number.",
+        "min_jaccard_variants > The parameter value is unspecified or not a double number.",
+        "min_sokal > The parameter value is unspecified or not a double number.",
+        "ddaRelation > The parameter value is empty / unspecified.",
+        "order_by > The parameter value is empty / unspecified."
+    ],
+    "requestpar": {
+        "disease": "OMIM_125851"
+    },
+    "userinfo": {
+        "profile": "ACADEMIC",
+        "profileDescription": "Your DISGENET profile is ACADEMIC; you can access DISGENET REST endpoints with restrictions."
+    },
+    "payload": [
+        {
+            "assocID": "XyYDYJMBL4gz0CyBiUNg",
+            "disease1_Vocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "disease1_Name": "MODY2",
+            "disease1_Type": "disease",
+            "disease1_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease1_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease1_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease1_Classes_HPO": [],
+            "disease2_Vocabularies": [
+                "OMIM_125850",
+                "MESH_C565101",
+                "OMIM_600281",
+                "NCI_C129744",
+                "DO_0111099",
+                "MONDO_0007452",
+                "UMLS_C1852093"
+            ],
+            "disease2_Name": "MODY1",
+            "disease2_Type": "disease",
+            "disease2_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease2_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease2_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease2_Classes_HPO": [],
+            "source": "CURATED",
+            "shared_genes": 2,
+            "ngenes_diseaseID_1": 2,
+            "ngenes_diseaseID_2": 3,
+            "union_genes": 3,
+            "jaccard_genes": 0.66667,
+            "shared_variants": 1,
+            "nvariants_diseaseID_1": 264,
+            "nvariants_diseaseID_2": 130,
+            "union_variants": 393,
+            "jaccard_variants": 0.00254,
+            "ddaRelation": null,
+            "sokal": 0.991604687106497,
+            "pvalue_jaccard_genes": 7.4876802687846045,
+            "pvalue_jaccard_variants": 1.318014914580121
+        },
+        {
+            "assocID": "VCYDYJMBL4gz0CyBiUNg",
+            "disease1_Vocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "disease1_Name": "MODY2",
+            "disease1_Type": "disease",
+            "disease1_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease1_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease1_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease1_Classes_HPO": [],
+            "disease2_Vocabularies": [
+                "OMIM_600496",
+                "MESH_C563933",
+                "OMIM_142410",
+                "NCI_C129742",
+                "DO_0111102",
+                "MONDO_0010894",
+                "UMLS_C1838100"
+            ],
+            "disease2_Name": "MODY3",
+            "disease2_Type": "disease",
+            "disease2_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease2_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease2_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease2_Classes_HPO": [],
+            "source": "CURATED",
+            "shared_genes": 2,
+            "ngenes_diseaseID_1": 2,
+            "ngenes_diseaseID_2": 5,
+            "union_genes": 5,
+            "jaccard_genes": 0.4,
+            "shared_variants": 1,
+            "nvariants_diseaseID_1": 264,
+            "nvariants_diseaseID_2": 189,
+            "union_variants": 452,
+            "jaccard_variants": 0.00221,
+            "ddaRelation": null,
+            "sokal": 0.991604687106497,
+            "pvalue_jaccard_genes": 6.964801523504267,
+            "pvalue_jaccard_variants": 1.1602860736601255
+        },
+        {
+            "assocID": "oSYDYJMBL4gz0CyBiUNg",
+            "disease1_Vocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "disease1_Name": "MODY2",
+            "disease1_Type": "disease",
+            "disease1_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease1_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease1_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease1_Classes_HPO": [],
+            "disease2_Vocabularies": [
+                "OMIM_601820",
+                "OMIM_256450",
+                "MESH_D044903",
+                "NCI_C122923",
+                "NCI_C131425",
+                "ORDO_657",
+                "MONDO_0019010",
+                "MONDO_0017182",
+                "UMLS_C3888018"
+            ],
+            "disease2_Name": "PHHI",
+            "disease2_Type": "disease",
+            "disease2_Classes_MSH": [
+                "Digestive System Diseases (C06)",
+                "Nutritional and Metabolic Diseases (C18)",
+                "Congenital, Hereditary, and Neonatal Diseases and Abnormalities (C16)"
+            ],
+            "disease2_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease2_Classes_DO": [],
+            "disease2_Classes_HPO": [],
+            "source": "CURATED",
+            "shared_genes": 2,
+            "ngenes_diseaseID_1": 2,
+            "ngenes_diseaseID_2": 6,
+            "union_genes": 6,
+            "jaccard_genes": 0.33333,
+            "shared_variants": 0,
+            "nvariants_diseaseID_1": 264,
+            "nvariants_diseaseID_2": 128,
+            "union_variants": 392,
+            "jaccard_variants": null,
+            "ddaRelation": null,
+            "sokal": 0.556506206005112,
+            "pvalue_jaccard_genes": 6.788710264448585,
+            "pvalue_jaccard_variants": null
+        },
+        {
+            "assocID": "kmGNcJMBlLbR_mRUSN0X",
+            "disease1_Vocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "disease1_Name": "MODY2",
+            "disease1_Type": "disease",
+            "disease1_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease1_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease1_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease1_Classes_HPO": [],
+            "disease2_Vocabularies": [
+                "OMIM_606391",
+                "MESH_C562772",
+                "NCI_C114769",
+                "HPO_HP:0004904",
+                "DO_0050524",
+                "ORDO_552",
+                "MONDO_0018911",
+                "UMLS_C0342276"
+            ],
+            "disease2_Name": "Maturity onset diabetes mellitus in young",
+            "disease2_Type": "disease",
+            "disease2_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease2_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease2_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease2_Classes_HPO": [
+                "Abnormality of the endocrine system (00818)",
+                "Abnormality of metabolism/homeostasis (01939)"
+            ],
+            "source": "CURATED",
+            "shared_genes": 2,
+            "ngenes_diseaseID_1": 2,
+            "ngenes_diseaseID_2": 24,
+            "union_genes": 24,
+            "jaccard_genes": 0.08333,
+            "shared_variants": 97,
+            "nvariants_diseaseID_1": 264,
+            "nvariants_diseaseID_2": 1052,
+            "union_variants": 1219,
+            "jaccard_variants": 0.07957,
+            "ddaRelation": null,
+            "sokal": 0.995784648957771,
+            "pvalue_jaccard_genes": 5.523892441436798,
+            "pvalue_jaccard_variants": 201.61812555580292
+        },
+        {
+            "assocID": "pSYDYJMBL4gz0CyBiUNg",
+            "disease1_Vocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "disease1_Name": "MODY2",
+            "disease1_Type": "disease",
+            "disease1_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease1_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease1_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease1_Classes_HPO": [],
+            "disease2_Vocabularies": [
+                "NCI_C129739",
+                "MONDO_0015967",
+                "EFO_1001511",
+                "UMLS_C3888631"
+            ],
+            "disease2_Name": "Monogenic diabetes",
+            "disease2_Type": "disease",
+            "disease2_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease2_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease2_Classes_DO": [],
+            "disease2_Classes_HPO": [],
+            "source": "CURATED",
+            "shared_genes": 2,
+            "ngenes_diseaseID_1": 2,
+            "ngenes_diseaseID_2": 46,
+            "union_genes": 46,
+            "jaccard_genes": 0.04348,
+            "shared_variants": 95,
+            "nvariants_diseaseID_1": 264,
+            "nvariants_diseaseID_2": 668,
+            "union_variants": 837,
+            "jaccard_variants": 0.1135,
+            "ddaRelation": null,
+            "sokal": 0.994871042181239,
+            "pvalue_jaccard_genes": 4.949861173711331,
+            "pvalue_jaccard_variants": 216.2259926542388
+        },
+        {
+            "assocID": "cSYDYJMBL4gz0CyBiUNg",
+            "disease1_Vocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "disease1_Name": "MODY2",
+            "disease1_Type": "disease",
+            "disease1_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease1_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease1_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease1_Classes_HPO": [],
+            "disease2_Vocabularies": [
+                "OMIM_602485",
+                "MESH_C538374",
+                "OMIM_138079",
+                "DO_0070216",
+                "ORDO_79299",
+                "MONDO_0011236",
+                "UMLS_C1865290"
+            ],
+            "disease2_Name": "HYPERINSULINEMIC HYPOGLYCEMIA, FAMILIAL, 3",
+            "disease2_Type": "disease",
+            "disease2_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)"
+            ],
+            "disease2_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease2_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease2_Classes_HPO": [],
+            "source": "CURATED",
+            "shared_genes": 1,
+            "ngenes_diseaseID_1": 2,
+            "ngenes_diseaseID_2": 1,
+            "union_genes": 2,
+            "jaccard_genes": 0.5,
+            "shared_variants": 55,
+            "nvariants_diseaseID_1": 264,
+            "nvariants_diseaseID_2": 67,
+            "union_variants": 276,
+            "jaccard_variants": 0.19928,
+            "ddaRelation": null,
+            "sokal": 0.554926342783684,
+            "pvalue_jaccard_genes": 3.831901753561792,
+            "pvalue_jaccard_variants": 178.03187927101715
+        },
+        {
+            "assocID": "K5W1c5MBlLbR_mRUS7kL",
+            "disease1_Vocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "disease1_Name": "MODY2",
+            "disease1_Type": "disease",
+            "disease1_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease1_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease1_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease1_Classes_HPO": [],
+            "disease2_Vocabularies": [
+                "MESH_D003924",
+                "ICD10_E11",
+                "OMIM_125853",
+                "NCI_C26747",
+                "OMIM_164731",
+                "OMIM_601724",
+                "OMIM_600509",
+                "OMIM_138430",
+                "OMIM_147545",
+                "HPO_HP:0005978",
+                "OMIM_138079",
+                "OMIM_147670",
+                "OMIM_167413",
+                "OMIM_600281",
+                "OMIM_189907",
+                "DO_9352",
+                "MONDO_0005148",
+                "UMLS_C0011860"
+            ],
+            "disease2_Name": "Adult-Onset Diabetes Mellitus",
+            "disease2_Type": "disease",
+            "disease2_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease2_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease2_Classes_DO": [
+                "disease of metabolism (0014667)",
+                "genetic disease (630)"
+            ],
+            "disease2_Classes_HPO": [
+                "Abnormality of the endocrine system (00818)",
+                "Abnormality of metabolism/homeostasis (01939)"
+            ],
+            "source": "CURATED",
+            "shared_genes": 2,
+            "ngenes_diseaseID_1": 2,
+            "ngenes_diseaseID_2": 328,
+            "union_genes": 328,
+            "jaccard_genes": 0.0061,
+            "shared_variants": 33,
+            "nvariants_diseaseID_1": 264,
+            "nvariants_diseaseID_2": 3523,
+            "union_variants": 3754,
+            "jaccard_variants": 0.00879,
+            "ddaRelation": null,
+            "sokal": 0.942502039725376,
+            "pvalue_jaccard_genes": 3.2354099227957316,
+            "pvalue_jaccard_variants": 34.25796996595874
+        },
+        {
+            "assocID": "3SYDYJMBL4gz0CyBiUNg",
+            "disease1_Vocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "disease1_Name": "MODY2",
+            "disease1_Type": "disease",
+            "disease1_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease1_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease1_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease1_Classes_HPO": [],
+            "disease2_Vocabularies": [
+                "OMIM_606176",
+                "OMIM_138079",
+                "DO_0060639",
+                "ORDO_99885",
+                "MONDO_0100164",
+                "MONDO_0100165",
+                "UMLS_C5393570"
+            ],
+            "disease2_Name": "PDMI",
+            "disease2_Type": "disease",
+            "disease2_Classes_MSH": [],
+            "disease2_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease2_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease2_Classes_HPO": [],
+            "source": "CURATED",
+            "shared_genes": 1,
+            "ngenes_diseaseID_1": 2,
+            "ngenes_diseaseID_2": 4,
+            "union_genes": 5,
+            "jaccard_genes": 0.2,
+            "shared_variants": 33,
+            "nvariants_diseaseID_1": 264,
+            "nvariants_diseaseID_2": 35,
+            "union_variants": 266,
+            "jaccard_variants": 0.12406,
+            "ddaRelation": null,
+            "sokal": 0.985677571504802,
+            "pvalue_jaccard_genes": 3.2298897355536083,
+            "pvalue_jaccard_variants": 111.03904139940224
+        },
+        {
+            "assocID": "TiYDYJMBL4gz0CyBiUNg",
+            "disease1_Vocabularies": [
+                "OMIM_125851",
+                "OMIM_610582",
+                "MESH_C564219",
+                "OMIM_138079",
+                "NCI_C129741",
+                "DO_0111100",
+                "MONDO_0007453",
+                "UMLS_C0342277"
+            ],
+            "disease1_Name": "MODY2",
+            "disease1_Type": "disease",
+            "disease1_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease1_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease1_Classes_DO": [
+                "genetic disease (630)",
+                "disease of metabolism (0014667)"
+            ],
+            "disease1_Classes_HPO": [],
+            "disease2_Vocabularies": [
+                "MESH_C563425",
+                "NCI_C114902",
+                "ORDO_99885",
+                "MONDO_0100164",
+                "UMLS_C1833104"
+            ],
+            "disease2_Name": "DIABETES MELLITUS, PERMANENT NEONATAL",
+            "disease2_Type": "disease",
+            "disease2_Classes_MSH": [
+                "Nutritional and Metabolic Diseases (C18)",
+                "Endocrine System Diseases (C19)"
+            ],
+            "disease2_Classes_UMLS_ST": [
+                "Disease or Syndrome (T047)"
+            ],
+            "disease2_Classes_DO": [],
+            "disease2_Classes_HPO": [],
+            "source": "CURATED",
+            "shared_genes": 1,
+            "ngenes_diseaseID_1": 2,
+            "ngenes_diseaseID_2": 9,
+            "union_genes": 10,
+            "jaccard_genes": 0.1,
+            "shared_variants": 34,
+            "nvariants_diseaseID_1": 264,
+            "nvariants_diseaseID_2": 202,
+            "union_variants": 432,
+            "jaccard_variants": 0.0787,
+            "ddaRelation": null,
+            "sokal": 0.986490000396351,
+            "pvalue_jaccard_genes": 2.8777871847510985,
+            "pvalue_jaccard_variants": 78.68325595281708
+        }
+    ],
+    "httpStatus": 200
+}
