@@ -1,17 +1,17 @@
 from flask import Blueprint, jsonify, request
-from models import Disease
+from models import DiseaseEFO
 
-disease_bp = Blueprint('disease_bp', __name__)
+disease_EFO_bp = Blueprint('disease_bp', __name__)
 
 class DiseaseAPI:
     @staticmethod
-    @disease_bp.route('/api/diseases', methods=['GET'])
+    @disease_EFO_bp.route('/api/diseases_EFO', methods=['GET'])
     def get_all_or_by_query():
         disease_id = request.args.get('id')
         if disease_id:
             return DiseaseAPI.get_disease_by_id(disease_id)
         else:
-            diseases = Disease.query.all()
+            diseases = DiseaseEFO.query.all()
             return jsonify([
                 {
                     'id': d.id,
@@ -27,13 +27,13 @@ class DiseaseAPI:
             ])
 
     @staticmethod
-    @disease_bp.route('/api/diseases/<string:disease_id>', methods=['GET'])
+    @disease_EFO_bp.route('/api/diseases_EFO/<string:disease_id>', methods=['GET'])
     def get_disease_by_path(disease_id):
         return DiseaseAPI.get_disease_by_id(disease_id)
 
     @staticmethod
     def get_disease_by_id(disease_id):
-        disease = Disease.query.get(disease_id)
+        disease = DiseaseEFO.query.get(disease_id)
         if not disease:
             return jsonify({'error': 'Disease not found'}), 404
 

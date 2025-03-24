@@ -1,5 +1,6 @@
 from flask import Blueprint, jsonify, request
 from models import Literature
+from sqlalchemy import or_
 
 literature_bp = Blueprint('literature_bp', __name__)
 
@@ -7,58 +8,54 @@ class LiteratureAPI:
     @staticmethod
     @literature_bp.route('/api/literatures', methods=['GET'])
     def get_all_or_by_query():
-        literature_id = request.args.get('id')
-        if literature_id:
-            return LiteratureAPI.get_literature_by_id(literature_id)
-        else:
-            literatures = Literature.query.all()
-            return jsonify([
-                {
-                    "DrugID": l.DrugID,
-                    "DrugName": l.DrugName,
-                    "PubChemID": l.PubChemID,
-                    "Target": l.Target,
-                    "Disease": l.Disease,
-                    "Side_effect": l.Side_effect,
-                    "NewDirectTarget": l.NewDirectTarget,
-                    "NewIndirectTarget": l.NewIndirectTarget,
-                    "NewDisease": l.NewDisease,
-                    "Evidence": l.Evidence,
-                    "Insilico": l.Insilico,
-                    "Invitro": l.Invitro,
-                    "Invivo": l.Invivo,
-                    "Clinicaltrial": l.Clinicaltrial,
-                    "SupportedSentences": l.SupportedSentences,
-                    "PMID": l.PMID
-                } for l in literatures
-            ])
+        query = request.args.get('query')
+
+        # ✅ 查询模式：query参数优先匹配 DrugID，其次 DrugName（完全匹配）
+        if query:
+            return LiteratureAPI.get_literature_by_keyword(query)
+
+        # ✅ 无 query 参数：返回所有数据
+        literatures = Literature.query.all()
+        return jsonify([
+            LiteratureAPI.serialize_literature(l) for l in literatures if l is not None
+        ])
 
     @staticmethod
-    @literature_bp.route('/api/literatures/<string:literature_id>', methods=['GET'])
-    def get_literature_by_path(literature_id):
-        return LiteratureAPI.get_literature_by_id(literature_id)
+    @literature_bp.route('/api/literatures/<string:keyword>', methods=['GET'])
+    def get_literature_by_path(keyword):
+        return LiteratureAPI.get_literature_by_keyword(keyword)
 
     @staticmethod
-    def get_literature_by_id(literature_id):
-        literature = Literature.query.get(literature_id)
-        if not literature:
-            return jsonify({'error': 'Literature not found'}), 404
+    def get_literature_by_keyword(keyword):
+        # 先按 DrugID 查找
+        literature = Literature.query.filter_by(DrugID=keyword).first()
+        if literature:
+            return jsonify(LiteratureAPI.serialize_literature(literature))
 
-        return jsonify({
-            "DrugID": literature.DrugID,
-            "DrugName": literature.DrugName,
-            "PubChemID": literature.PubChemID,
-            "Target": literature.Target,
-            "Disease": literature.Disease,
-            "Side_effect": literature.Side_effect,
-            "NewDirectTarget": literature.NewDirectTarget,
-            "NewIndirectTarget": literature.NewIndirectTarget,
-            "NewDisease": literature.NewDisease,
-            "Evidence": literature.Evidence,
-            "Insilico": literature.Insilico,
-            "Invitro": literature.Invitro,
-            "Invivo": literature.Invivo,
-            "Clinicaltrial": literature.Clinicaltrial,
-            "SupportedSentences": literature.SupportedSentences,
-            "PMID": literature.PMID
-        })
+        # 再按 DrugName 精确匹配（不区分大小写）
+        literature = Literature.query.filter(Literature.DrugName.ilike(keyword)).first()
+        if literature:
+            return jsonify(LiteratureAPI.serialize_literature(literature))
+
+        return jsonify({'error': 'Literature not found'}), 404
+
+    @staticmethod
+    def serialize_literature(l):
+        return {
+            "DrugName": l.DrugName,
+            "DrugID": l.DrugID,
+            "PubChemID": l.PubChemID,
+            "OriginalTarget": l.OriginalTarget,
+            "OriginalIndication": l.OriginalIndication,
+            "Side_effect": l.Side_effect,
+            "RepositionedDirectTarget": l.RepositionedDirectTarget,
+            "RepositionedIndirectTarget": l.RepositionedIndirectTarget,
+            "RepositionedIndication": l.RepositionedIndication,
+            "Evidence": l.Evidence,
+            "Insilico": l.Insilico,
+            "Invitro": l.Invitro,
+            "Invivo": l.Invivo,
+            "Clinicaltrial": l.Clinicaltrial,
+            "SupportedSentences": l.SupportedSentences,
+            "PMID": l.PMID
+        }
