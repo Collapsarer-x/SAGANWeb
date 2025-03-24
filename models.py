@@ -21,6 +21,7 @@ class Drug(db.Model):
     Drug_Groups = db.Column('Drug Groups', db.Text)
     InChIKey = db.Column(db.Text)
     InChI = db.Column(db.Text)
+    protein_structure2 = db.Column(db.Text)
 
 # 疾病表_EFO
 class DiseaseEFO(db.Model):

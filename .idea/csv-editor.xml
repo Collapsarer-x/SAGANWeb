@@ -87,7 +87,28 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Datasets\DrugBank\Drug.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Datasets\DrugBank\items.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Datasets\DrugBank\merged_drug_table.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Datasets\DrugBank\merged_drug_table_Update.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
