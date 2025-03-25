@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 from extension import db, cors
 from sqlalchemy import text
-from models import Drug, DiseaseEFO, DiseaseOMIM, Literature
+from models import Drug, DiseaseEFO, DiseaseOMIM, Literature, Disease
 from flask.views import MethodView
 from routes import all_blueprints
 

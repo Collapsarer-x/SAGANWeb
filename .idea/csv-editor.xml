@@ -24,6 +24,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Datasets\Disease\OpenTargets\Associations - indirect (by data source).csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Datasets\Disease\OpenTargets\disease.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Datasets\Disease\OpenTargets\final_result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Datasets\Disease\OpenTargets\processed_disease.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Datasets\Disease\disease.csv">
           <value>
             <Attribute>

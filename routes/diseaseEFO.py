@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request
 from models import DiseaseEFO
 
-disease_EFO_bp = Blueprint('disease_bp', __name__)
+disease_EFO_bp = Blueprint('disease_EFO_bp', __name__)
 
 class DiseaseAPI:
     @staticmethod

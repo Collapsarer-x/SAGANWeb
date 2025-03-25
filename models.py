@@ -74,3 +74,28 @@ class Literature(db.Model):
     Clinicaltrial = db.Column(db.Text)
     SupportedSentences = db.Column(db.Text)
     PMID = db.Column(db.Integer)
+
+
+class Disease(db.Model):
+    __tablename__ = 'disease'
+
+    id = db.Column(db.Text, primary_key=True)
+    link = db.Column(db.Text)
+    name = db.Column(db.Text)
+    description = db.Column(db.Text)
+    dbXRefs = db.Column(db.Text)
+    parents = db.Column(db.Text)
+    obsoleteTerms = db.Column(db.Text)
+    obsoleteXRefs = db.Column(db.Text)
+    children = db.Column(db.Text)
+    ancestors = db.Column(db.Text)
+    therapeuticAreas = db.Column(db.Text)
+    descendants = db.Column(db.Text)
+    ontology = db.Column(db.Text)
+    synonyms_hasExactSynonym = db.Column(db.Text)
+    synonyms_hasRelatedSynonym = db.Column(db.Text)
+    synonyms_hasNarrowSynonym = db.Column(db.Text)
+    synonyms_hasBroadSynonym = db.Column(db.Text)
+
+    # def __repr__(self):
+    #     return f"<Disease id={self.id} name={self.name}>"
